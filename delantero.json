@@ -1,0 +1,282 @@
+[
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 0.67,
+    "RATIO P.": 3.33
+  },
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 1.29,
+    "RATIO P.": 1.87
+  },
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 1.01,
+    "RATIO P.": 0.82
+  },
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 0.46,
+    "RATIO P.": 3.15
+  },
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 0.84,
+    "RATIO P.": 2.25
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 0.74,
+    "RATIO P.": 3.8
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.11,
+    "RATIO P.": 1.55
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 3.04,
+    "RATIO P.": 0.78
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 3.22,
+    "RATIO P.": 3.03
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.38,
+    "RATIO P.": 2.54
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 2.48,
+    "RATIO P.": 4.77
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.1,
+    "RATIO P.": 2.05
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 2.9,
+    "RATIO P.": 0.65
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 3.3,
+    "RATIO P.": 3.53
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.67,
+    "RATIO P.": 2.4
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 2.48,
+    "RATIO P.": 4.77
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.92,
+    "RATIO P.": 1.46
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 2.87,
+    "RATIO P.": 0.65
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.16,
+    "RATIO P.": 1.63
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "PORTON",
+    "RATIO M.O.": 3.83,
+    "RATIO P.": 2.36
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 2.39,
+    "RATIO P.": 3.33
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.21,
+    "RATIO P.": 1.87
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 3.01,
+    "RATIO P.": 0.82
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 3.21,
+    "RATIO P.": 3.15
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.57,
+    "RATIO P.": 2.25
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 2.5,
+    "RATIO P.": 3.8
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.11,
+    "RATIO P.": 1.55
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 3.04,
+    "RATIO P.": 0.78
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 3.22,
+    "RATIO P.": 3.03
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.38,
+    "RATIO P.": 2.54
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 2.48,
+    "RATIO P.": 4.77
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.1,
+    "RATIO P.": 2.05
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 2.9,
+    "RATIO P.": 0.65
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 3.3,
+    "RATIO P.": 3.53
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.67,
+    "RATIO P.": 2.4
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "CAPOT",
+    "RATIO M.O.": 2.48,
+    "RATIO P.": 4.77
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "GUARDABARRO",
+    "RATIO M.O.": 2.92,
+    "RATIO P.": 1.46
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "FRENTE",
+    "RATIO M.O.": 2.87,
+    "RATIO P.": 0.65
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_ALMA",
+    "RATIO M.O.": 3.3,
+    "RATIO P.": 3.53
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "PARAGOLPE_CTRO",
+    "RATIO M.O.": 3.16,
+    "RATIO P.": 1.63
+  }
+]

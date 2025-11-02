@@ -1,0 +1,170 @@
+[
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.51,
+    "RATIO P.": 2.67
+  },
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.43,
+    "RATIO P.": 2.28
+  },
+  {
+    "SEG": 0,
+    "CLASE": 901,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 2.0,
+    "RATIO P.": 1.08
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.44,
+    "RATIO P.": 2.7
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.35,
+    "RATIO P.": 2.39
+  },
+  {
+    "SEG": 1,
+    "CLASE": 901,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 1.26,
+    "RATIO P.": 1.11
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.48,
+    "RATIO P.": 2.74
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.46,
+    "RATIO P.": 2.74
+  },
+  {
+    "SEG": 2,
+    "CLASE": 901,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 1.97,
+    "RATIO P.": 1.52
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.45,
+    "RATIO P.": 2.05
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.34,
+    "RATIO P.": 1.76
+  },
+  {
+    "SEG": 3,
+    "CLASE": 901,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 2.31,
+    "RATIO P.": 1.2
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.51,
+    "RATIO P.": 2.67
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.43,
+    "RATIO P.": 2.28
+  },
+  {
+    "SEG": 0,
+    "CLASE": 907,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 2.0,
+    "RATIO P.": 1.08
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.44,
+    "RATIO P.": 2.7
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.35,
+    "RATIO P.": 2.39
+  },
+  {
+    "SEG": 1,
+    "CLASE": 907,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 2.08,
+    "RATIO P.": 1.11
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.48,
+    "RATIO P.": 2.74
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.46,
+    "RATIO P.": 2.74
+  },
+  {
+    "SEG": 2,
+    "CLASE": 907,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 1.97,
+    "RATIO P.": 1.52
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_DEL_PANEL",
+    "RATIO M.O.": 2.45,
+    "RATIO P.": 2.05
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "PUERTA_TRA_PANEL",
+    "RATIO M.O.": 2.34,
+    "RATIO P.": 1.76
+  },
+  {
+    "SEG": 3,
+    "CLASE": 907,
+    "REPUESTO": "ZOCALO",
+    "RATIO M.O.": 2.31,
+    "RATIO P.": 1.2
+  }
+]

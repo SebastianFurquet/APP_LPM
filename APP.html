@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Libreria Boostrap -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Tema Bootstrap 5 para Select2 (opcional pero queda más prolijo) -->
+    <link href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.6.2/dist/select2-bootstrap4.min.css"
+        rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Seleccioná el vehículo</h5>
+
+                <div class="row g-3">
+                    <!-- SELECT MARCA -->
+                    <div class="col-md-4">
+                        <label for="selectMarca" class="form-label fw-semibold">Marca</label>
+                        <select id="selectMarca" class="form-select">
+                            <option value="" selected disabled>Elegí una marca...</option>
+                        </select>
+                    </div>
+
+                    <!-- SELECT MODELO -->
+                    <div class="col-md-4">
+                        <label for="selectModelo" class="form-label fw-semibold">Modelo</label>
+                        <select id="selectModelo" class="form-select" disabled>
+                            <option value="" selected disabled>Primero elegí marca...</option>
+                        </select>
+                    </div>
+
+                    <!-- SELECT VERSION -->
+                    <div class="col-md-4">
+                        <label for="selectVersion" class="form-label fw-semibold">Versión</label>
+                        <select id="selectVersion" class="form-select" disabled>
+                            <option value="" selected disabled>Primero elegí modelo...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr class="my-4" />
+
+<div class="d-flex">
+        <div class="container my-4 col-6">
+            <div id="resultado" class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-primary text-white fw-bold text-center py-2">
+                    Datos del Vehículo
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-semibold text-secondary">🚗 Marca:</span>
+                        <span id="outMarca" class="fw-bold text-dark"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-semibold text-secondary">📘 Modelo:</span>
+                        <span id="outModelo" class="fw-bold text-dark"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-semibold text-secondary">⚙️ Versión:</span>
+                        <span id="outVersion" class="fw-bold text-dark"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-semibold text-secondary">🧾 Código Vehículo:</span>
+                        <span id="outCodVehiculo" class="fw-bold text-dark"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-semibold text-secondary">📊 Segmento:</span>
+                        <span id="outSegmento" class="fw-bold text-dark"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-semibold text-secondary">⭐ Gama:</span>
+                        <span id="outGama" class="fw-bold text-dark"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="container my-4 col-6">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-header bg-primary text-white fw-bold text-center py-2">
+                        Totales Generales
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fw-semibold text-secondary">
+                                🛠️ Mano de Obra:
+                            </span>
+                            <span id="sumMO" class="fw-bold text-dark">$0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fw-semibold text-secondary">
+                                🎨 Pintura:
+                            </span>
+                            <span id="sumPintura" class="fw-bold text-dark">$0</span>
+                        </div>
+
+                        <hr class="my-3" />
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary fs-6">💰 Total Reparación:</span>
+                            <span id="sumTotal" class="fw-bold fs-5 text-success">$0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- FRENTE -->
+        <div class="container my-4">
+            <h5 class="text-center text-uppercase fw-bold mb-3 text-primary">
+                Sector Frente
+            </h5>
+
+            <table class="table table-striped table-bordered align-middle shadow-sm">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th style="width: 10%">🗹</th>
+                        <th style="width: 40%">Repuesto</th>
+                        <th style="width: 25%">Cambia</th>
+                        <th style="width: 25%">Repara</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>Delantero</td>
+                        <td>CAPOT</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero" data-repuesto="CAPOT"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero" data-repuesto="CAPOT"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Delantero</td>
+                        <td>GUARDABARRO</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero" data-repuesto="GUARDABARRO"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero" data-repuesto="GUARDABARRO"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Delantero</td>
+                        <td>FRENTE</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero" data-repuesto="FRENTE"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero" data-repuesto="FRENTE"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Delantero</td>
+                        <td>PARAGOLPE_ALMA</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero"
+                                data-repuesto="PARAGOLPE_ALMA" data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero"
+                                data-repuesto="PARAGOLPE_ALMA" data-tipo="repara" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Delantero</td>
+                        <td>PARAGOLPE_CTRO</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero"
+                                data-repuesto="PARAGOLPE_CTRO" data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="delantero"
+                                data-repuesto="PARAGOLPE_CTRO" data-tipo="repara" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- LATERAL -->
+        <div class="container my-4">
+            <h5 class="text-center text-uppercase fw-bold mb-3 text-primary">
+                Sector Lateral
+            </h5>
+
+            <table class="table table-striped table-bordered align-middle shadow-sm">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th style="width: 10%">🗹</th>
+                        <th style="width: 40%">Repuesto</th>
+                        <th style="width: 25%">Cambia</th>
+                        <th style="width: 25%">Repara</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>Lateral</td>
+                        <td>PUERTA_DEL_PANEL</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="lateral"
+                                data-repuesto="PUERTA_DEL_PANEL" data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="lateral"
+                                data-repuesto="PUERTA_DEL_PANEL" data-tipo="repara" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lateral</td>
+                        <td>PUERTA_TRA_PANEL</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="lateral"
+                                data-repuesto="PUERTA_TRA_PANEL" data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="lateral"
+                                data-repuesto="PUERTA_TRA_PANEL" data-tipo="repara" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lateral</td>
+                        <td>ZOCALO</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="lateral" data-repuesto="ZOCALO"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="lateral" data-repuesto="ZOCALO"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TRASERO -->
+        <div class="container my-4">
+            <h5 class="text-center text-uppercase fw-bold mb-3 text-primary">
+                Sector Trasero
+            </h5>
+
+            <table class="table table-striped table-bordered align-middle shadow-sm">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th style="width: 10%">🗹</th>
+                        <th style="width: 40%">Repuesto</th>
+                        <th style="width: 25%">Cambia</th>
+                        <th style="width: 25%">Repara</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>Trasero</td>
+                        <td>BAUL</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="BAUL"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="BAUL"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trasero</td>
+                        <td>GUARDABARRO</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="GUARDABARRO"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="GUARDABARRO"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trasero</td>
+                        <td>PANELCOLASUP</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="PANELCOLASUP"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="PANELCOLASUP"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trasero</td>
+                        <td>PARAGOLPE</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="PARAGOLPE"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="PARAGOLPE"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trasero</td>
+                        <td>PORTON</td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="PORTON"
+                                data-tipo="cambia" />
+                        </td>
+                        <td>
+                            <input type="checkbox" class="chk-dano" data-sector="trasero" data-repuesto="PORTON"
+                                data-tipo="repara" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- jQuery (Select2 lo necesita) -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- Select2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <!-- Bootstrap JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="main.js"></script>
+
+</html>
+
+
+<!-- 
+
+<div>
+    
+    <label>
+        Sector:
+        <select id="sectorSelect">
+            <option value="trasero">Trasero</option>
+            <option value="delantero">Delantero</option>
+            <option value="lateral">Lateral</option>
+        </select>
+    </label>
+
+    <label>
+        Repuesto:
+        <select id="repuestoSelect">
+            
+        </select>
+    </label>
+
+    <label>
+        Segmento vehículo:
+        <select id="segmentoSelect">
+            <option value="MM0">MM0 (Moto)</option>
+            <option value="MM1" selected>MM1 (Auto)</option>
+            <option value="MM2">MM2 (SUV)</option>
+            <option value="MM3">MM3 (Pick-Up)</option>
+        </select>
+    </label>
+
+    <button id="btnCalcular">Calcular costo</button>
+</div>
+
+<div id="resultadoCosto" style="display:none;">
+    <div><strong>Repuesto</strong> <span id="outRepuesto"></span></div>
+    <div><strong>MO</strong> <span id="outMO"></span></div>
+    <div><strong>Pintura</strong> <span id="outPintura"></span></div>
+    <div><strong>Total</strong> <span id="outTotal"></span></div>
+</div>
+
+-->
